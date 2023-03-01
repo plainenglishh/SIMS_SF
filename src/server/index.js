@@ -4,6 +4,7 @@ const PORT = 8080; //HTTPS
 const BASE_URL = "/v1";
 
 const Express = require("express");
+require("dotenv").config();
 let App = Express.app();
 
 App.get(BASE_URL, (Req, Res) => {
