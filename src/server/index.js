@@ -1,3 +1,5 @@
+// This is a prototype script, final version is to be written in Rust.
+
 const PORT = 8080; //HTTPS
 const BASE_URL = "/v1";
 
