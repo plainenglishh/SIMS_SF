@@ -1,7 +1,14 @@
+const PORT = 8080; //HTTPS
+const BASE_URL = "/v1";
+
 const Express = require("express");
 let App = Express.app();
 
-App.get("/", (Req, Res) => {
+App.get(BASE_URL, (Req, Res) => {
   Res.setStatus(200);
   Res.send("{\"api_version\": \"v1\"}");
+});
+
+App.listen(PORT, ()=>{
+  console.log(`SIMS is listening on port ${PORT}`);
 });
